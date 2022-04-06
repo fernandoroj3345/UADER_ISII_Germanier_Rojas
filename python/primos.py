@@ -14,7 +14,12 @@ for x in range(2, max + 1):
 		index += 1
 	if isPrime:
 		primeList.append(x)
+<<<<<<< HEAD
 print ("Fecha y hora " + time.strftime("%c"))
+=======
+print(primeList)
+print(time.strftime("%c"))
+>>>>>>> 2809dbc96fec6660c2874734fe43d1ae3e343b1e
 #-------------------------------------------------------------
 # prime number calculator: find the first n primes
 count = int(input("Quanti cugini vuoi trovare?: "))
@@ -33,4 +38,8 @@ while len(primeList) < count:
 		primeList.append(x)
 	x += 1
 print(primeList)
+<<<<<<< HEAD
 print ("Fecha y hora " + time.strftime("%c"))
+=======
+print(time.strftime("%c"))
+>>>>>>> 2809dbc96fec6660c2874734fe43d1ae3e343b1e
