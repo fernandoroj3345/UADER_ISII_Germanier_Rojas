@@ -9,4 +9,4 @@ Punto 8:Modificamos el texto desde el visual y lo cambiamos a español.
 Agremos con add . el archivo primos.py luego comentamos con "git commit -m" y por ultimo los subimos a github con el comando "push".
 Punto 9:Modificamos el texto desde el visual y lo cambiamos a Italiano.
 Agremos con add . el archivo primos.py luego comentamos con "git commit -m" y por ultimo los subimos a github con el comando "push".
-Punto 10:
+Punto 10:Utilizamos la libreria time desde Visual Studio Code para mostrar la fecha y hora.
