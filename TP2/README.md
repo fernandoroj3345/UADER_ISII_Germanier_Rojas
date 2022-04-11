@@ -9,4 +9,7 @@
 ## Punto 8 : Agregando la linea df.head() Devuelve las n primeras filas del DataFrame, agregando ## df.tail() devuelve 5 columnas por defecto.
 ## Punto 9 : Documentado en el siguiente link 
 
-## https://github.com/fernandoroj3345/  UADER_ISII_Germanier_Rojas/tree/main/TP2
+## https://github.com/fernandoroj3345/UADER_ISII_Germanier_Rojas/tree/main/TP2
+
+## http://localhost:8888/tree/Documents/3RO%20FCyT_2022/INGENIERIA%20DE%20SOFTWARE%20II/TPS/TP2
+
