@@ -1,6 +1,7 @@
 import time
+max = 33
+count = 7
 # prime number calculator: find all primes up to n
-max = int(input("Fino a quale numero vuoi trovare i numeri primi?  : "))
 primeList = []
 #for loop for checking each number
 for x in range(2, max + 1):
@@ -15,10 +16,9 @@ for x in range(2, max + 1):
 	if isPrime:
 		primeList.append(x)
 print(primeList)
-print(time.strftime("%c"))
+print ("Fecha y hora " + time.strftime("%c"))
 #-------------------------------------------------------------
 # prime number calculator: find the first n primes
-count = int(input("Quanti cugini vuoi trovare?: "))
 primeList = []
 x = 2
 while len(primeList) < count:
@@ -34,4 +34,4 @@ while len(primeList) < count:
 		primeList.append(x)
 	x += 1
 print(primeList)
-print(time.strftime("%c"))
+print ("Fecha y hora " + time.strftime("%c"))
