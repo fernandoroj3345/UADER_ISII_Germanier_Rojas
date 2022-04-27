@@ -9,9 +9,9 @@ from abc import ABC, abstractmethod
 
 class Abstraction:
     """
-    The Abstraction defines the interface for the "control" part of the two
-    class hierarchies. It maintains a reference to an object of the
-    Implementation hierarchy and delegates all of the real work to this object.
+    La abstracción define la interfaz para la parte de "control" de los dos
+    jerarquías de clases. Mantiene una referencia a un objeto del
+    Jerarquía de implementación y delega todo el trabajo real a este objeto.
     """
 
     def __init__(self, implementation: Implementation) -> None:

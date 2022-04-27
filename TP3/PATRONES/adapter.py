@@ -5,11 +5,11 @@
 
 class Target:
     """
-    The Target defines the domain-specific interface used by the client code.
+    El objetivo define la interfaz específica del dominio utilizada por el código del cliente.
     """
 
     def request(self) -> str:
-        return "Target: The default target's behavior."
+        return "Objetivo: el comportamiento del objetivo predeterminado."
 
 
 class Adaptee:

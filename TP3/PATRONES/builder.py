@@ -10,8 +10,8 @@ from typing import Any
 
 class Builder(ABC):
     """
-    The Builder interface specifies methods for creating the different parts of
-    the Product objects.
+   La interfaz de Builder especifica métodos para crear las diferentes partes de
+    los objetos del Producto.
     """
 
     @property

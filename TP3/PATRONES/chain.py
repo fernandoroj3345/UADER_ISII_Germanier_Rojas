@@ -5,8 +5,8 @@ from typing import Any, Optional
 
 class Handler(ABC):
     """
-    The Handler interface declares a method for building the chain of handlers.
-    It also declares a method for executing a request.
+    a interfaz de controlador declara un método para construir la cadena de controladores.
+    También declara un método para ejecutar una solicitud.
     """
 
     @abstractmethod
