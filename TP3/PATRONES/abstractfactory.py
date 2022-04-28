@@ -9,12 +9,12 @@ from abc import ABC, abstractmethod
 
 class AbstractFactory(ABC):
     """
-    The Abstract Factory interface declares a set of methods that return
-    different abstract products. These products are called a family and are
-    related by a high-level theme or concept. Products of one family are usually
-    able to collaborate among themselves. A family of products may have several
-    variants, but the products of one variant are incompatible with products of
-    another.
+    La interfaz de Abstract Factory declara un conjunto de métodos que devuelven
+    diferentes productos abstractos. Estos productos se denominan familia y son
+    relacionados por un tema o concepto de alto nivel. Los productos de una familia suelen ser
+    capaces de colaborar entre ellos. Una familia de productos puede tener varios
+    variantes, pero los productos de una variante son incompatibles con los productos de
+    otro.
     """
     @abstractmethod
     def create_product_a(self) -> AbstractProductA:
@@ -70,12 +70,12 @@ Concrete Products are created by corresponding Concrete Factories.
 
 class ConcreteProductA1(AbstractProductA):
     def useful_function_a(self) -> str:
-        return "The result of the product A1."
+        return "El resultado para el producto A1."
 
 
 class ConcreteProductA2(AbstractProductA):
     def useful_function_a(self) -> str:
-        return "The result of the product A2."
+        return "El resultado para el producto A2."
 
 
 class AbstractProductB(ABC):
@@ -109,7 +109,7 @@ Concrete Products are created by corresponding Concrete Factories.
 
 class ConcreteProductB1(AbstractProductB):
     def useful_function_b(self) -> str:
-        return "The result of the product B1."
+        return "El resultado para el producto B1."
 
     """
     The variant, Product B1, is only able to work correctly with the variant,
@@ -119,12 +119,12 @@ class ConcreteProductB1(AbstractProductB):
 
     def another_useful_function_b(self, collaborator: AbstractProductA) -> str:
         result = collaborator.useful_function_a()
-        return f"The result of the B1 collaborating with the ({result})"
+        return f"El resultado de la B1 colaborando con el ({result})"
 
 
 class ConcreteProductB2(AbstractProductB):
     def useful_function_b(self) -> str:
-        return "The result of the product B2."
+        return "El resultado para el producto B2."
 
     def another_useful_function_b(self, collaborator: AbstractProductA):
         """
@@ -133,7 +133,7 @@ class ConcreteProductB2(AbstractProductB):
         AbstractProductA as an argument.
         """
         result = collaborator.useful_function_a()
-        return f"The result of the B2 collaborating with the ({result})"
+        return f"El resultado de la B1 colaborando con el ({result})"
 
 
 def client_code(factory: AbstractFactory) -> None:
