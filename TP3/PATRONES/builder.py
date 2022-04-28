@@ -96,7 +96,7 @@ class Product1():
         self.parts.append(part)
 
     def list_parts(self) -> None:
-        print(f"Product parts: {', '.join(self.parts)}", end="")
+        print(f"Partes del producto: {', '.join(self.parts)}", end="")
 
 
 class Director:
@@ -148,20 +148,20 @@ if __name__ == "__main__":
     builder = ConcreteBuilder1()
     director.builder = builder
 
-    print("Standard basic product: ")
+    print("Producto basico estandar: ")
     director.build_minimal_viable_product()
     builder.product.list_parts()
 
     print("\n")
 
-    print("Standard full featured product: ")
+    print("Producto estandar completo: ")
     director.build_full_featured_product()
     builder.product.list_parts()
 
     print("\n")
 
     # Remember, the Builder pattern can be used without a Director class.
-    print("Custom product: ")
+    print("Producto personalizado: ")
     builder.produce_part_a()
     builder.produce_part_b()
     builder.product.list_parts()
