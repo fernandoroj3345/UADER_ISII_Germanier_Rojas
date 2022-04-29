@@ -42,16 +42,16 @@ def client_code(target: "Target") -> None:
 
 
 if __name__ == "__main__":
-    print("Client: I can work just fine with the Target objects:")
+    print("Cliente: Puedo trabajar bien con los objetos de Target:")
     target = Target()
     client_code(target)
     print("\n")
 
     adaptee = Adaptee()
-    print("Client: The Adaptee class has a weird interface. "
-          "See, I don't understand it:")
+    print("Cliente: La clase Adaptee tiene una interfaz rara. "
+          "mira, no lo entiendo:")
     print(f"Adaptee: {adaptee.specific_request()}", end="\n\n")
 
-    print("Client: But I can work with it via the Adapter:")
+    print("Cliente: Pero puedo trabajar con él a través del Adaptador:")
     adapter = Adapter()
     client_code(adapter)
